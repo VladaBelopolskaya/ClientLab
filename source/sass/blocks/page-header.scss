@@ -1,0 +1,55 @@
+.page-header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  width: 320px;
+  background-color: #362f2d;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 15px;
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.3);
+    top: 40px;
+  }
+}
+
+.page-header__logo {
+  width: 133px;
+  height: 24px;
+}
+
+.page-header__menu {
+  width: 74px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  padding-top: 5px;
+
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  &:focus,
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
+}
+
+.page-header__sale {
+  display: none;
+}
+
+.page-header__city {
+  display: none;
+}

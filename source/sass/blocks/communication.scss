@@ -1,0 +1,100 @@
+.communication {
+  z-index: 2;
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: transparent;
+  padding-top: 18px;
+  padding-bottom: 20px;
+}
+
+.communication__delivery {
+  display: none;
+}
+
+.communication__telephone {
+  width: 150px;
+}
+
+.communication__telephone a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.communication__telephone p {
+  color: #333333;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+
+  margin: 0;
+  padding: 0;
+  margin-top: 2px;
+}
+
+.communication__button {
+  cursor: pointer;
+
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+
+  width: 160px;
+  padding: 0;
+  margin: 0;
+
+  background-color: #cc9933;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 3px 0 0 #ab812c;
+
+  transition: 0.3s linear;
+
+  &:focus,
+  &:hover,
+  &:active {
+    background-color: #dda73b;
+  }
+}
+
+.communication__search {
+  margin-top: 16px;
+  position: relative;
+}
+
+.communication__search input {
+  box-sizing: border-box;
+  width: 320px;
+  position: relative;
+  border: none;
+  border-radius: 3px;
+  padding-left: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  color: #cccccc;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.communication__search button {
+  position: absolute;
+  right: 12px;
+  top: 10px;
+
+  cursor: pointer;
+
+  font-size: 0;
+  background-image: url(../img/search.png);
+  background-color: transparent;
+  border: none;
+  width: 20px;
+  height: 20px;
+}
