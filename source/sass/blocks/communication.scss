@@ -5,17 +5,51 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: flex-start;
   background-color: transparent;
   padding-top: 18px;
   padding-bottom: 20px;
+
+  @media (min-width: 480px) {
+    padding-top: 38px;
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: 750px) {
+    width: 495px;
+    order: 1;
+    padding-top: 21px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: 970px) {
+    width: 718px;
+    justify-content: flex-start;
+  }
 }
 
 .communication__delivery {
   display: none;
+
+  @media (min-width: 970px) {
+    display: block;
+    margin: 0;
+    padding: 0;
+    padding-top: 8px;
+
+    color: #000000;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+  }
 }
 
 .communication__telephone {
   width: 150px;
+
+  @media (min-width: 970px) {
+    margin-left: 60px;
+  }
 }
 
 .communication__telephone a {
@@ -48,10 +82,12 @@
   width: 160px;
   padding: 0;
   margin: 0;
+  padding-top: 6px;
+  padding-bottom: 6px;
 
   background-color: #cc9933;
   border: none;
-  border-radius: 5px;
+  border-radius: 3px;
   box-shadow: 0 3px 0 0 #ab812c;
 
   transition: 0.3s linear;
@@ -60,6 +96,10 @@
   &:hover,
   &:active {
     background-color: #dda73b;
+  }
+
+  @media (min-width: 970px) {
+    margin-left: 13px;
   }
 }
 
@@ -82,6 +122,20 @@
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
+
+  @media (min-width: 480px) {
+    width: 380px;
+    padding-left: 42px;
+  }
+
+  @media (min-width: 750px) {
+    width: 495px;
+    padding-left: 12px;
+  }
+
+  @media (min-width: 970px) {
+    width: 716px;
+  }
 }
 
 .communication__search button {
@@ -92,9 +146,17 @@
   cursor: pointer;
 
   font-size: 0;
-  background-image: url(../img/search.png);
+  background-image: url("../img/search.png");
   background-color: transparent;
   border: none;
   width: 20px;
   height: 20px;
+
+  @media (min-width: 480px) {
+    right: 42px;
+  }
+
+  @media (min-width: 750px) {
+    right: 12px;
+  }
 }
